@@ -13,11 +13,34 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
-    }
+            guard let windowScene = (scene as? UIWindowScene) else { return }
+
+            let window = UIWindow(windowScene: windowScene)
+            let tabBarController = UITabBarController()
+
+            let cameraVC = ViewController()
+            cameraVC.tabBarItem = UITabBarItem(title: "Camera", image: UIImage(systemName: "camera"), tag: 0)
+
+            let counterVC = CounterViewController()
+            counterVC.tabBarItem = UITabBarItem(title: "Counter", image: UIImage(systemName: "number"), tag: 1)
+
+            tabBarController.viewControllers = [cameraVC, counterVC]
+
+            // Customize the appearance of the tab bar
+            let appearance = UITabBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = .white
+
+            tabBarController.tabBar.standardAppearance = appearance
+            if #available(iOS 15.0, *) {
+                tabBarController.tabBar.scrollEdgeAppearance = appearance
+            }
+
+            window.rootViewController = tabBarController
+            self.window = window
+            window.makeKeyAndVisible()
+        }
+
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

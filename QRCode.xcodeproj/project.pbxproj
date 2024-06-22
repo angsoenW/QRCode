@@ -13,6 +13,7 @@
 		EC4542992C1CB9A700BB8172 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EC4542982C1CB9A700BB8172 /* Base */; };
 		EC45429B2C1CB9A800BB8172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC45429A2C1CB9A800BB8172 /* Assets.xcassets */; };
 		EC45429E2C1CB9A800BB8172 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EC45429D2C1CB9A800BB8172 /* Base */; };
+		EC4542A62C1E54EF00BB8172 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4542A52C1E54EF00BB8172 /* CounterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EC45429A2C1CB9A800BB8172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC45429D2C1CB9A800BB8172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC45429F2C1CB9A800BB8172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC4542A52C1E54EF00BB8172 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		EC4542902C1CB9A700BB8172 /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
+				EC4542A52C1E54EF00BB8172 /* CounterViewController.swift */,
 				EC4542912C1CB9A700BB8172 /* AppDelegate.swift */,
 				EC4542932C1CB9A700BB8172 /* SceneDelegate.swift */,
 				EC4542952C1CB9A700BB8172 /* ViewController.swift */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC4542962C1CB9A700BB8172 /* ViewController.swift in Sources */,
+				EC4542A62C1E54EF00BB8172 /* CounterViewController.swift in Sources */,
 				EC4542922C1CB9A700BB8172 /* AppDelegate.swift in Sources */,
 				EC4542942C1CB9A700BB8172 /* SceneDelegate.swift in Sources */,
 			);
